@@ -3,7 +3,7 @@ import path from "path";
 import * as url from "url";
 
 const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
-const filePath = path.join(__dirname, "files", "frwsh.txt");
+const filePath = path.join(__dirname, "files", "fresh.txt");
 
 const CONTENT = "I am fresh and young";
 

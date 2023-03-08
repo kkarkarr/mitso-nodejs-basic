@@ -3,7 +3,7 @@ import * as url from "url";
 
 const remove = async () => {
     const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
-    await fs.unlink("src/fs/fileToRemove.txt", (err) =>
+    await fs.unlink("src/fs/files/fileToRemove.txt", (err) =>
     {
         if (err)
         {
