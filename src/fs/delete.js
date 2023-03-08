@@ -1,5 +1,19 @@
+import fs from "fs/promises";
+import * as url from "url";
+
 const remove = async () => {
-    // Write your code here 
+    const __dirname = url.fileURLToPath(new URL(".", import.meta.url));
+    await fs.unlink("src/fs/fileToRemove.txt", (err) =>
+    {
+        if (err)
+        {
+            console.log(err);
+        }
+        else
+        {
+            console.log("File was deleted");
+        }
+    }); 
 };
 
 await remove();
