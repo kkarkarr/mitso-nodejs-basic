@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-import * as url from "url";
+import url from "url";
 
 const list = async () => {
     let dirname = url.fileURLToPath(new URL(".", import.meta.url));
@@ -11,9 +11,10 @@ const list = async () => {
         }
         else
         {
-            console.log(files);
+            console.log("Files were depicted");
         }
     });
+    console.log(files);
 };
 
 await list(); 
